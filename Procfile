@@ -1,0 +1,1 @@
+web: java -jar target/springdemo-1.0.jar
