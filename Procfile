@@ -1,1 +1,1 @@
-web: java -jar target/springdemo-1.0.jar
+web: java -jar build/libs/springdemo-0.0.1-SNAPSHOT.jar
