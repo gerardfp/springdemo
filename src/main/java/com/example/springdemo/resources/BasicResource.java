@@ -8,14 +8,19 @@ import reactor.core.publisher.Mono;
 import javax.security.auth.login.AccountNotFoundException;
 
 @RestController
-@RequestMapping(BasicResource.BASIC)
+@RequestMapping("/")
 public class BasicResource {
     public static final String BASIC = "/basic";
     public static final String ID_ID = "/{id}";
     public static final String SEARCH = "/search";
 
-    @GetMapping(BASIC)
+    @GetMapping("/")
     public Mono<String> read() {
+        return Mono.just("It works DDD");
+    }
+
+    @GetMapping(BASIC)
+    public Mono<String> readTal() {
         return Mono.just("IDdd=vaaa");
     }
 
