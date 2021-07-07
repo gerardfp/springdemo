@@ -11,14 +11,14 @@ import javax.security.auth.login.AccountNotFoundException;
 @ControllerAdvice
 public class ApiExceptionHandler {
 
-    @ResponseStatus(HttpStatus.UNAUTHORIZED)
-    @ExceptionHandler({
-            org.springframework.security.access.AccessDeniedException.class
-    })
-    @ResponseBody
-    public void unauthorizedRequest() {
-        //Empty. Nothing to do
-    }
+//    @ResponseStatus(HttpStatus.UNAUTHORIZED)
+//    @ExceptionHandler({
+//            org.springframework.security.access.AccessDeniedException.class
+//    })
+//    @ResponseBody
+//    public void unauthorizedRequest() {
+//        //Empty. Nothing to do
+//    }
 
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler({
